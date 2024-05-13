@@ -10,7 +10,10 @@ Python's Faker library was utilized to generate synthetic data for the Raksha Pi
 The generated data was saved into CSV (Comma Separated Values) files. CSV format is commonly used for storing tabular data in plain text, making it easy to read and manipulate. These CSV files were then stored in a Google Drive folder for accessibility and organization.
 
 ### 3. Database Creation:
-A MySQL database named `raksha_pipes_sales_db` was created to store the generated data. MySQL is a popular relational database management system known for its reliability, scalability, and performance. The database provides a structured environment for storing, managing, and querying data.
+A MySQL database named `raksha_pipes_sales_db` was created to store the generated data. MySQL is a popular relational database management system known for its reliability, scalability, and performance. The database provides a structured environment for storing, managing, and querying data. Below is the Databse schema
+
+![raksha-sales_schema](https://github.com/RAm-SaGar-863/Raksha_Pipes_Assignment/assets/128234583/babfeb45-c377-46e7-b635-1214d4b71c54)
+
 
 ### 4. Table Creation:
 SQL (Structured Query Language) queries were written to create tables within the MySQL database. Each table was designed to store specific types of data, such as customer information, product details, order details, payment records, and sales data. The tables include:
