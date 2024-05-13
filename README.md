@@ -26,7 +26,7 @@ SQL (Structured Query Language) queries were written to create tables within the
 - Fact_Payments
 - Fact_Sales
 
-**Dim_Date:**
+####**Dim_Date:**
 -date_id (Primary Key): Unique identifier for each date.
 -date: Date value.
 -day: Day of the month.
@@ -36,29 +36,29 @@ SQL (Structured Query Language) queries were written to create tables within the
 -holiday_flag: Flag indicating whether the date is a holiday (1 for holiday, 0 for non-holiday).
 -weekday_flag: Flag indicating whether the date is a weekday (1 for weekday, 0 for weekend).
 
-**Dim_Customers:**
+####**Dim_Customers:**
 customer_id (Primary Key): Unique identifier for each customer.
 customer_name: Name of the customer/company.
 contact_person: Name of the contact person at the customer/company.
 email: Email address of the customer/contact person.
 phone: Phone number of the customer/contact person.
 
-**Dim_Location:**
+####**Dim_Location:**
 location_id (Primary Key): Unique identifier for each location.
 City: Name of the city.
 
-**Dim_Product_Category:**
+####**Dim_Product_Category:**
 product_category_id (Primary Key): Unique identifier for each product category.
 product_category: Name of the product category.
 
-**Dim_Products:**
+####**Dim_Products:**
 product_id (Primary Key): Unique identifier for each product.
 product_name: Name of the product.
 product_category_id (Foreign Key): Identifier linking the product to its category in Dim_Product_Category.
 cost_per_unit: Cost per unit of the product.
 sale_unit_price: Sale unit price of the product.
 
-**Fact_Order_details:**
+####**Fact_Order_details:**
 order_id (Primary Key): Unique identifier for each order.
 product_id (Foreign Key): Identifier linking the order to a product in Dim_Products.
 customer_id (Foreign Key): Identifier linking the order to a customer in Dim_Customers.
@@ -68,14 +68,14 @@ payable_amount: Total payable amount for the order.
 advance_amount: Advance amount paid for the order.
 delivery_date: Date when the order was delivered.
 
-**Fact_Payments:**
+####**Fact_Payments:**
 payment_id (Primary Key): Unique identifier for each payment.
 order_id (Foreign Key): Identifier linking the payment to an order in Fact_Order_details.
 payment_date: Date when the payment was made.
 delay_of_payment: Delay in payment (in days) from the delivery date.
 payed_amount: Amount paid by the customer.
 
-**Fact_Sales:**
+####**Fact_Sales:**
 sale_id (Primary Key): Unique identifier for each sale.
 order_id (Foreign Key): Identifier linking the sale to an order in Fact_Order_details.
 customer_id (Foreign Key): Identifier linking the sale to a customer in Dim_Customers.
