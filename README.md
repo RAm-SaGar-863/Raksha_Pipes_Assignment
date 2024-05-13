@@ -27,14 +27,14 @@ SQL (Structured Query Language) queries were written to create tables within the
 - Fact_Sales
 
 #### **Dim_Date:**
--date_id (Primary Key): Unique identifier for each date.
--date: Date value.
--day: Day of the month.
--month: Month of the year.
--year: Year.
--quarter: Quarter of the year.
--holiday_flag: Flag indicating whether the date is a holiday (1 for holiday, 0 for non-holiday).
--weekday_flag: Flag indicating whether the date is a weekday (1 for weekday, 0 for weekend).
+- date_id (Primary Key): Unique identifier for each date.
+- date: Date value.
+- day: Day of the month.
+- month: Month of the year.
+- year: Year.
+- quarter: Quarter of the year.
+- holiday_flag: Flag indicating whether the date is a holiday (1 for holiday, 0 for non-holiday).
+- weekday_flag: Flag indicating whether the date is a weekday (1 for weekday, 0 for weekend).
 
 #### **Dim_Customers:**
 customer_id (Primary Key): Unique identifier for each customer.
