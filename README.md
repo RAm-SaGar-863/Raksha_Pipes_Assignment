@@ -26,6 +26,72 @@ SQL (Structured Query Language) queries were written to create tables within the
 - Fact_Payments
 - Fact_Sales
 
+**Dim_Date:**
+-date_id (Primary Key): Unique identifier for each date.
+-date: Date value.
+-day: Day of the month.
+-month: Month of the year.
+-year: Year.
+-quarter: Quarter of the year.
+-holiday_flag: Flag indicating whether the date is a holiday (1 for holiday, 0 for non-holiday).
+-weekday_flag: Flag indicating whether the date is a weekday (1 for weekday, 0 for weekend).
+
+**Dim_Customers:**
+customer_id (Primary Key): Unique identifier for each customer.
+customer_name: Name of the customer/company.
+contact_person: Name of the contact person at the customer/company.
+email: Email address of the customer/contact person.
+phone: Phone number of the customer/contact person.
+
+**Dim_Location:**
+location_id (Primary Key): Unique identifier for each location.
+City: Name of the city.
+
+**Dim_Product_Category:**
+product_category_id (Primary Key): Unique identifier for each product category.
+product_category: Name of the product category.
+
+**Dim_Products:**
+product_id (Primary Key): Unique identifier for each product.
+product_name: Name of the product.
+product_category_id (Foreign Key): Identifier linking the product to its category in Dim_Product_Category.
+cost_per_unit: Cost per unit of the product.
+sale_unit_price: Sale unit price of the product.
+
+**Fact_Order_details:**
+order_id (Primary Key): Unique identifier for each order.
+product_id (Foreign Key): Identifier linking the order to a product in Dim_Products.
+customer_id (Foreign Key): Identifier linking the order to a customer in Dim_Customers.
+order_date: Date when the order was placed.
+quantity: Quantity of products ordered.
+payable_amount: Total payable amount for the order.
+advance_amount: Advance amount paid for the order.
+delivery_date: Date when the order was delivered.
+
+**Fact_Payments:**
+payment_id (Primary Key): Unique identifier for each payment.
+order_id (Foreign Key): Identifier linking the payment to an order in Fact_Order_details.
+payment_date: Date when the payment was made.
+delay_of_payment: Delay in payment (in days) from the delivery date.
+payed_amount: Amount paid by the customer.
+
+**Fact_Sales:**
+sale_id (Primary Key): Unique identifier for each sale.
+order_id (Foreign Key): Identifier linking the sale to an order in Fact_Order_details.
+customer_id (Foreign Key): Identifier linking the sale to a customer in Dim_Customers.
+payment_id (Foreign Key): Identifier linking the sale to a payment in Fact_Payments.
+product_id (Foreign Key): Identifier linking the sale to a product in Dim_Products.
+location_id (Foreign Key): Identifier linking the sale to a location in Dim_Location.
+sale_date: Date when the sale occurred.
+cost_per_unit: Cost per unit of the product sold.
+quantity_sold: Quantity of products sold.
+sale_per_unit: Sale per unit price of the product.
+cogs: Cost of goods sold.
+shipping_cost: Cost of shipping.
+interest_for_payment_delay: Interest charged for delayed payment.
+total_sale_price: Total sale price.
+profit: Profit generated from the sale.
+
 ### 5. Data Import:
 The CSV files containing the generated data were manually imported into their respective tables in the MySQL database. This process involved using MySQL's data import functionality to load the data from the CSV files into the corresponding database tables. Once imported, the data was ready for querying and analysis within the database.
 
