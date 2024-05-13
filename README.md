@@ -1,7 +1,11 @@
 # Raksha_Pipes_Assignment
 
 
-Certainly! Let's break down each step with detailed explanations:
+
+
+
+**Dashboard Link:**
+**Dataset Link:**
 
 ### 1. Data Generation:
 Python's Faker library was utilized to generate synthetic data for the Raksha Pipes company. This library allows the generation of various types of fake data, including names, addresses, emails, and more. In this project, Faker was used to create data for customers, products, orders, payments, and sales. Each piece of data was generated with appropriate characteristics to simulate real-world scenarios.
