@@ -2,6 +2,7 @@
 
 ![dashboard](https://github.com/RAm-SaGar-863/Raksha_Pipes_Assignment/assets/128234583/c10b2869-95c7-41f8-8d25-344795d7e860)
 
+**Video Presentation Link**: https://drive.google.com/file/d/1g22oIs7vw2BxvIVbqWoIk0dFFDymqEhI/view?usp=sharing
 
 **Dashboard Link:** [https://app.powerbi.com/groups/me/reports/693ab17a-a269-4697-8e10-fcab1d32b347/ReportSectionff41180c9c6a44a51244?experience=power-bi&redirectedFromSignup=1](https://app.powerbi.com/view?r=eyJrIjoiNzBkZGQyYmYtOTYxOS00MjBlLWI4YjctYmNmMmMwZTBlODc0IiwidCI6ImQ0ZjVjNjY3LWI3ZDYtNGZkMi05YjU2LWNlNzQ2MTJlNWY1NSJ9)
 
