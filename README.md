@@ -3,9 +3,9 @@
 ![dashboard](https://github.com/RAm-SaGar-863/Raksha_Pipes_Assignment/assets/128234583/c10b2869-95c7-41f8-8d25-344795d7e860)
 
 
-**Dashboard Link:**
+**Dashboard Link:** https://app.powerbi.com/groups/me/reports/693ab17a-a269-4697-8e10-fcab1d32b347/ReportSectionff41180c9c6a44a51244?experience=power-bi&redirectedFromSignup=1
 
-**Dataset Link:**
+**Dataset Link:** https://drive.google.com/drive/folders/1U5bT6zA84onYdStOC4wy5DY6-HtiHWSi?usp=sharing
 
 ### 1. Data Generation:
 Python's Faker library was utilized to generate synthetic data for the Raksha Pipes company. This library allows the generation of various types of fake data, including names, addresses, emails, and more. In this project, Faker was used to create data for customers, products, orders, payments, and sales. Each piece of data was generated with appropriate characteristics to simulate real-world scenarios.
